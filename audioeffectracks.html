@@ -65,7 +65,7 @@
         function processCommand(command) {
             let output = `&gt; ${command}\n`;
             if (command === "help") {
-                output += "Available commands: download, menu, echo [text], clear";
+                output += "Available commands: download, home, echo [text], clear";
             } 
             else if (command.startsWith("echo ")) {
                 output += command.slice(5);
@@ -76,7 +76,7 @@
                 output += "Opening download page...";
                 window.open("https://digitaltwindevices.gumroad.com/l/cmdline", "_blank");
             }
-            else if (command === "menu") {
+            else if (command === "home") {
                 output += "Returning to menu...";
                 window.open("index.html");
             }
