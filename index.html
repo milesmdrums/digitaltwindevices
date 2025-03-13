@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL TWIN DEVICES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop-video-container" id="videoContainer">
+        <video id="introVideo" autoplay muted>
+            <source src="assets/video/screener.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="desktop">
+        <div class="movie-container">
+            <img src="assets/video/homegif.gif">
+        </div>
+        <br>
+        <div class="desktop-menu-container">
+            <a href="audioeffectracks.html" class="audio-effect">AUDIO EFFECTS</a>
+            <a href="instrumentracks.html" class="instrument">INSTRUMENTS</a>
+            <a href="serumpacks.html" class="serum">SERUM PACKS</a>
+            <a href="samplepacks.html" class="sample">SAMPLE PACKS</a>
+        </div>
+    </div>
+    
+    <div class="mobile">
+        <div class="movie-container">
+            <img src="assets/video/homegif.gif">
+        </div>
+        <br>
+        <div class="mobile-menu-container">
+            <a href="audioeffectracks.html" class="audio-effect">AUDIO EFFECTS</a>
+            <a href="instrumentracks.html" class="instrument">INSTRUMENTS</a>
+            <a href="serumpacks.html" class="serum">SERUM PACKS</a>
+            <a href="samplepacks.html" class="sample">SAMPLE PACKS</a>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById("introVideo");
+            const container = document.getElementById("videoContainer");
+            
+            video.onended = function() {
+                container.style.display = "none";
+            };
+        });
+
+        const hoverSound = new Audio("assets/sounds/hov.wav");
+
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("mouseenter", () => {
+                hoverSound.currentTime = 0;
+                hoverSound.play();
+            });
+        });
+    </script>
+</body>
+</html>
