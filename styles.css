@@ -174,7 +174,7 @@ img {
 
   @font-face {
     font-family: 'Haettenschweiler';
-    src: url('assets/Haettenschweiler-Regular.ttf') format('ttf');
+    src: url('assets/Haettenschweiler-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
