@@ -8,8 +8,17 @@ h1 {
 }
 
 h2{
-  font-family: "Calgary", monospace;
-  font-size: 60px;
+  font-family: monospace;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
+  align-items: center;
+  text-align: center;
+}
+
+h3{
+  font-family: monospace;
+  font-size: 20px;
   color: white;
   letter-spacing: 2px;
   align-items: center;
@@ -50,6 +59,12 @@ a {
   100% { color: rgb(0, 0, 0); }
 }
 
+@keyframes flashColor5 {
+  0% { color: rgb(0, 0, 0); }
+  50% { color: rgb(255, 255, 255); }
+  100% { color: rgb(0, 0, 0); }
+}
+
 .audio-effect:hover {
   animation: flashColor1 0.1s infinite;
   cursor: none;
@@ -67,6 +82,11 @@ a {
 
 .sample:hover {
   animation: flashColor4 0.1s infinite;
+  cursor: none;
+}
+
+.about:hover {
+  animation: flashColor5 0.1s infinite;
   cursor: none;
 }
 
@@ -210,8 +230,8 @@ img {
   border-radius: 10px;
   
   display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 #terra{
