@@ -7,6 +7,15 @@ h1 {
   text-align: center;
 }
 
+h2{
+  font-family: "Calgary", monospace;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 2px;
+  align-items: center;
+  text-align: center;
+}
+
 a {
   font-family: "Haettenschweiler", monospace;
   font-optical-sizing: auto;
@@ -170,6 +179,13 @@ img {
   @font-face {
     font-family: 'Haettenschweiler';
     src: url('assets/Haettenschweiler-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Calgary';
+    src: url('assets/Calgary-BoldExtraCondensed.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
