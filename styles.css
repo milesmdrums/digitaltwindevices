@@ -255,7 +255,7 @@ img {
 }
 
 .cmd-line-container{
-  background-color: rgb(7, 7, 7);
+  background-color: rgb(27, 27, 27);
   color: rgb(0, 255, 0);
   font-family: 'windows_command_prompt', monospace;
   margin: 0;
@@ -280,7 +280,7 @@ img {
 }
 
 #input-field {
-  background: rgb(7,7,7);
+  background: rgb(27, 27, 27);
   border: none;
   color: rgb(0, 255, 0);
   font-family: 'windows_command_prompt', monospace;
