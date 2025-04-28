@@ -213,7 +213,7 @@ img {
 .item-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 50px;
 }
 
 .object-master{
